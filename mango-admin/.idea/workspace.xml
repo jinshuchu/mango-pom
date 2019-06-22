@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba028131-45b8-45d7-be35-5cfc3101f79c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/MangoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/MangoAdminApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/config/DruidConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/DruidConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/config/DruidDataSourceProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/DruidDataSourceProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/controller/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/dao/SysConfigMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysConfigMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/dao/SysDeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysDeptMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/dao/SysDictMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysDictMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/dao/SysLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysLogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/dao/SysLoginLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysLoginLogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/dao/SysMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/dao/SysRoleDeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysRoleDeptMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/dao/SysRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/dao/SysRoleMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysRoleMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/dao/SysUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/dao/SysUserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysUserRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/model/SysConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/model/SysDept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysDept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/model/SysDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysDict.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/model/SysLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/model/SysLoginLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysLoginLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/model/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/model/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/model/SysRoleDept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysRoleDept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/model/SysRoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysRoleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/model/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/model/SysUserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysUserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/sqlmap/SysConfigMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysConfigMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/sqlmap/SysDeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysDeptMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/sqlmap/SysDictMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysDictMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/sqlmap/SysLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/sqlmap/SysLoginLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysLoginLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/sqlmap/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/sqlmap/SysRoleDeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysRoleDeptMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/sqlmap/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/sqlmap/SysRoleMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysRoleMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/sqlmap/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/louis/mango/sqlmap/SysUserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysUserRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/louis/mango/MangoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/louis/mango/admin/MangoApplicationTests.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/MangoAdminApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/CorsConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/MybatisConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/DruidDataSourceProperties.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/DruidConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/SwaggerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysConfigMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysDeptMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysRoleDeptMapper.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/MangoApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/MangoAdminApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/MybatisConfig.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MangoAdminApplication">
+    <configuration name="MangoAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mango-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.louis.mango.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.louis.mango.admin.MangoAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MangoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mango-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.louis.mango.MangoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MangoAdminApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba028131-45b8-45d7-be35-5cfc3101f79c" name="Default Changelist" comment="" />
+      <created>1561224551346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561224551346</updated>
+      <workItem from="1561224552581" duration="450000" />
+      <workItem from="1561225021925" duration="146000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="596000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="27" column="61" lean-forward="true" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="69" lean-forward="true" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/MangoAdminApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/CorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/MybatisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/DruidDataSourceProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/DruidConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysConfigMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/sqlmap/SysRoleDeptMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/model/SysConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/louis/mango/admin/dao/SysDeptMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
