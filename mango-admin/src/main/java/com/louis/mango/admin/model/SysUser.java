@@ -1,6 +1,8 @@
 package com.louis.mango.admin.model;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class SysUser {
     private Long id;
@@ -32,6 +34,38 @@ public class SysUser {
     private Date lastUpdateTime;
 
     private Byte delFlag;
+
+    // 非数据库字段
+    private String deptName;
+
+    public String getDeptName() {
+        return deptName;
+    }
+
+    public void setDeptName(String deptName) {
+        this.deptName = deptName;
+    }
+
+    public String getRoleNames() {
+        return roleNames;
+    }
+
+    public void setRoleNames(String roleNames) {
+        this.roleNames = roleNames;
+    }
+
+    public List<SysUserRole> getUserRoles() {
+        return userRoles;
+    }
+
+    public void setUserRoles(List<SysUserRole> userRoles) {
+        this.userRoles = userRoles;
+    }
+
+    // 非数据库字段
+    private String roleNames;
+    // 非数据库字段
+    private List<SysUserRole> userRoles = new ArrayList<>();
 
     public Long getId() {
         return id;
