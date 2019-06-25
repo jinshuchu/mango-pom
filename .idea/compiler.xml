@@ -9,6 +9,8 @@
         <module name="mango-core" />
         <module name="mango-admin" />
         <module name="mango-common" />
+        <module name="mango.common" />
+        <module name="mango.core" />
       </profile>
     </annotationProcessing>
   </component>

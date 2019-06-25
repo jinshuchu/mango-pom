@@ -1,5 +1,7 @@
 package com.louis.mango.admin.dao;
 
+import java.util.List;
+
 import com.louis.mango.admin.model.SysDept;
 
 public interface SysDeptMapper {
@@ -14,4 +16,8 @@ public interface SysDeptMapper {
     int updateByPrimaryKeySelective(SysDept record);
 
     int updateByPrimaryKey(SysDept record);
+    
+    List<SysDept> findPage();
+    
+    List<SysDept> findAll();
 }

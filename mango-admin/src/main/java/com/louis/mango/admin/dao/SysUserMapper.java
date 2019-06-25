@@ -1,8 +1,10 @@
 package com.louis.mango.admin.dao;
 
-import com.louis.mango.admin.model.SysUser;
-
 import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
+import com.louis.mango.admin.model.SysUser;
 
 public interface SysUserMapper {
     int deleteByPrimaryKey(Long id);
@@ -16,22 +18,12 @@ public interface SysUserMapper {
     int updateByPrimaryKeySelective(SysUser record);
 
     int updateByPrimaryKey(SysUser record);
-
-    /**
-     * @Author wangkaishuang
-     * @Description 查询所有用户
-     * @Date 2019-06-23 02:23
-     * @Param []
-     * @Return java.util.List<com.louis.mango.admin.model.SysUser>
-     **/
-    List<SysUser> findAll();
-
-    /**
-     * @Author wangkaishuang
-     * @Description 分页查询
-     * @Date 2019-06-23 02:24
-     * @Param []
-     * @Return java.util.List<com.louis.mango.admin.model.SysUser>
-     **/
+    
     List<SysUser> findPage();
+    
+    SysUser findByName(@Param(value = "name") String name);
+    
+	List<SysUser> findPageByName(@Param(value = "name") String name);
+	
+	List<SysUser> findPageByNameAndEmail(@Param(value = "name") String name, @Param(value = "email") String email);
 }
