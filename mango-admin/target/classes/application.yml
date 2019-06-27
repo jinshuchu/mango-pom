@@ -21,6 +21,11 @@ spring:
       pool-prepared-statements: true
       max-open-prepared-statements: 50
       max-pool-prepared-statement-per-connection-size: 20
+  boot:
+    admin:
+      client:
+        url: "http://localhost:8000"
+
 
 
 #这段代码注释掉是因为mybatis可以通过java配置的方式，但是通过properties文件配置更方便一点，但是我还是没用QAQ
@@ -35,3 +40,10 @@ pagehelper:
   params: count=countSql
 
 # pagehelper
+
+#开放全部接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

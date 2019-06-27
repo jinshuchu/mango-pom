@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mango-core" />
-        <module name="mango-admin" />
         <module name="mango-common" />
-        <module name="mango.common" />
+        <module name="mango-admin" />
+        <module name="mango-core" />
         <module name="mango.core" />
+        <module name="mango-monitor" />
+        <module name="mango.common" />
       </profile>
     </annotationProcessing>
   </component>
