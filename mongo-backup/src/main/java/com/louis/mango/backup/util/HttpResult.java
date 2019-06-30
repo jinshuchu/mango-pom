@@ -1,8 +1,14 @@
 package com.louis.mango.backup.util;
 
 /**
+<<<<<<< HEAD
  * @Description: http结果封装
  * @Author: created by wangkaishuang on 2019-06-23
+=======
+ * HTTP结果封装
+ * @author Louis
+ * @date Jan 15, 2019
+>>>>>>> 13dbe0d8b2ddd1fc19ee76cd352c8c23e43f3787
  */
 public class HttpResult {
 
