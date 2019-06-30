@@ -3,9 +3,8 @@ package com.louis.mango.admin.util;
 import java.security.MessageDigest;
 
 /**
- * 密码加密
- * @author Louis
- * @date Jan 13, 2019
+ * @Description: 密码加密
+ * @Author: created by wangkaishuang on 2019-06-19
  */
 public class PasswordEncoder {
 

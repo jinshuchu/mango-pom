@@ -4,9 +4,8 @@ import java.io.Closeable;
 import java.io.IOException;
 
 /**
- * IO相关工具类
- * @author Louis
- * @date Oct 29, 2018
+ * @Description:
+ * @Author: created by wangkaishuang on 2019-06-23
  */
 public class IOUtils {
 

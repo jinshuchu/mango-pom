@@ -15,5 +15,6 @@
         <module>mango-common</module>
         <module>mango-core</module>
         <module>mango-monitor</module>
+        <module>mongo-backup</module>
     </modules>
 </project>

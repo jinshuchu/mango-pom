@@ -10,9 +10,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import com.louis.mango.admin.util.PasswordEncoder;
 
 /**
- * 身份验证提供者
- * @author Louis
- * @date Jan 14, 2019
+ * @Description:    登陆认证过滤器
+ * @Author: created by wangkaishuang on 2019-06-14
  */
 public class JwtAuthenticationProvider extends DaoAuthenticationProvider {
 

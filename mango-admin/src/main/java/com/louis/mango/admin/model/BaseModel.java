@@ -2,11 +2,6 @@ package com.louis.mango.admin.model;
 
 import java.util.Date;
 
-/**
- * 基础模型
- * @author Louis
- * @date Sep 13, 2018
- */
 public class BaseModel {
 
 	private Long id;

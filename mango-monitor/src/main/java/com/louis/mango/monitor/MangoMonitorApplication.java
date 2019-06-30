@@ -5,9 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * 启动器
- * @author Louis
- * @date Jan 15, 2019
+ * @Description: 启动器
+ * @Author: created by wangkaishuang on 2019-06-26
  */
 @EnableAdminServer
 @SpringBootApplication

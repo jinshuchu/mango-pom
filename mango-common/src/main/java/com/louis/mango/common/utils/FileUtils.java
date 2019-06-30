@@ -11,9 +11,8 @@ import java.io.InputStream;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 文件相关操作
- * @author Louis
- * @date Jan 14, 2019
+ * @Description:
+ * @Author: created by wangkaishuang on 2019-06-23
  */
 public class FileUtils {
 

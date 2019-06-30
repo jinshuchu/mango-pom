@@ -7,9 +7,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.GrantedAuthority;
 
 /**
- * 自定义令牌对象
- * @author Louis
- * @date Jan 14, 2019
+ * @Description:    登陆认证过滤器
+ * @Author: created by wangkaishuang on 2019-06-14
  */
 @Data
 public class JwtAuthenticatioToken extends UsernamePasswordAuthenticationToken {

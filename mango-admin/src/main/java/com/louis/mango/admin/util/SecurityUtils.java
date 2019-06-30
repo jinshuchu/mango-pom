@@ -10,7 +10,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @Description:    security相关操作
+ * @Description: security相关操作
  * @Author: created by wangkaishuang on 2019-06-23
  */
 

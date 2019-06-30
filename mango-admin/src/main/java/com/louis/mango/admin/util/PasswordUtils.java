@@ -3,9 +3,8 @@ package com.louis.mango.admin.util;
 import java.util.UUID;
 
 /**
- * 密码工具类
- * @author Louis
- * @date Sep 1, 2018
+ * @Description: 密码工具类
+ * @Author: created by wangkaishuang on 2019-03-19
  */
 public class PasswordUtils {
 

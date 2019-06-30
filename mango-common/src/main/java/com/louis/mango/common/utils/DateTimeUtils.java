@@ -4,9 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * 日期时间相关工具
- * @author Louis
- * @date Jan 14, 2019
+ * @Description:
+ * @Author: created by wangkaishuang on 2019-06-23
  */
 public class DateTimeUtils {
 

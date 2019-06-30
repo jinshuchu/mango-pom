@@ -17,9 +17,9 @@ import com.louis.mango.core.http.HttpResult;
 import com.louis.mango.core.page.PageRequest;
 
 /**
- * 字典控制器
- * @author Louis
- * @date Jan 13, 2019
+ /**
+ * @Description: 字典控制器
+ * @Author: created by wangkaishuang on 2019-06-24
  */
 @RestController
 @RequestMapping("dict")
