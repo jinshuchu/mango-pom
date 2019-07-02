@@ -10,11 +10,14 @@
 	</parent>
 	<groupId>com.louis</groupId>
 	<artifactId>mango-admin</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>mango</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
+		<java.version>1.8</java.version>
+		<!--properties节点中设置docker镜像的前缀“springboot”-->
+		<docker.image.prefix>springio</docker.image.prefix>
 		<java.version>1.8</java.version>
 	</properties>
 
@@ -110,8 +113,26 @@
 			<artifactId>spring-boot-admin-starter-client</artifactId>
 			<version>2.1.2</version>
 		</dependency>
-
+<!--		&lt;!&ndash;consul&ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-starter-consul-discovery</artifactId>-->
+<!--			<version>2.0.0.RELEASE</version>-->
+<!--		</dependency>-->
 	</dependencies>
+
+<!--	&lt;!&ndash;srping cloud&ndash;&gt;-->
+<!--	<dependencyManagement>-->
+<!--		<dependencies>-->
+<!--			<dependency>-->
+<!--				<groupId>org.springframework.cloud</groupId>-->
+<!--				<artifactId>spring-cloud-dependencies</artifactId>-->
+<!--				<version>Finchley.RELEASE</version>-->
+<!--				<type>pom</type>-->
+<!--				<scope>import</scope>-->
+<!--			</dependency>-->
+<!--		</dependencies>-->
+<!--	</dependencyManagement>-->
 
 	<build>
 		<plugins>
@@ -133,6 +154,23 @@
 						<version>8.0.13</version>
 					</dependency>
 				</dependencies>
+			</plugin>
+			<!--docker-->
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>1.2.0</version>
+				<configuration>
+					<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+					<dockerDirectory>src/main/resources/docker</dockerDirectory>
+					<resources>
+						<resource>
+							<targetPath>/</targetPath>
+							<directory>${project.build.directory}</directory>
+							<include>${project.build.finalName}.jar</include>
+						</resource>
+					</resources>
+				</configuration>
 			</plugin>
 		</plugins>
 
