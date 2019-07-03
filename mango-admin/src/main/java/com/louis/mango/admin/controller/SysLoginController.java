@@ -79,6 +79,7 @@ public class SysLoginController {
 //		if(!captcha.equals(kaptcha)){
 //			return HttpResult.error("验证码不正确");
 //		}
+//		System.out.println(request.getAttribute("user"));
 		// 用户信息
 		SysUser user = sysUserService.findByName(username);
 		// 账号不存在、密码错误

@@ -1,5 +1,6 @@
 package com.louis.mango.admin.config;
 
+import com.louis.mango.admin.interceptor.HttpLogInterceptor;
 import com.louis.mango.admin.interceptor.SecurityInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -33,5 +34,6 @@ public class CorsConfig implements WebMvcConfigurer {
         registry.addInterceptor(securityInterceptor)
                 .excludePathPatterns("/swagger-ui.html/**", "/webjars/**", "/swagger-resources/**", "/", "/error")
                 .order(1);
+        registry.addInterceptor(new HttpLogInterceptor()).order(2);
     }
 }

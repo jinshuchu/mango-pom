@@ -19,6 +19,8 @@ import com.louis.mango.admin.util.SecurityUtils;
 import com.louis.mango.core.http.HttpResult;
 import com.louis.mango.core.page.PageRequest;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  /**
  * @Description: 用户控制器
@@ -76,7 +78,7 @@ public class SysUserController {
 	
 	@PreAuthorize("hasAuthority('sys:user:view')")
 	@GetMapping(value="/findByName")
-	public HttpResult findByUserName(@RequestParam String name) {
+	public HttpResult findByUserName(HttpServletRequest request, @RequestParam String name) {
 		return HttpResult.ok(sysUserService.findByName(name));
 	}
 	
