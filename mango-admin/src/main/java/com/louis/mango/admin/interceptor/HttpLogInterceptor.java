@@ -110,6 +110,5 @@ public class HttpLogInterceptor extends HandlerInterceptorAdapter{
         }finally {
             request.removeAttribute(ATTRIBUTE_NAME);
         }
-
     }
 }

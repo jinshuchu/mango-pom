@@ -2,7 +2,7 @@ package com.louis.mango.backup;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+//import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * 启动器
@@ -10,7 +10,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @date Jan 15, 2019
  */
 @SpringBootApplication(scanBasePackages={"com.louis.mango"})
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 public class MangoBackupApplication {
 
 	public static void main(String[] args) {
