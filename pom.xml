@@ -16,5 +16,6 @@
         <module>mango-core</module>
         <module>mango-monitor</module>
         <module>mongo-backup</module>
+        <module>mango-mult-ithread</module>
     </modules>
 </project>

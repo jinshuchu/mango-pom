@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mango-common" />
         <module name="mango-admin" />
+        <module name="mango-mult-ithread" />
         <module name="mango-core" />
         <module name="mango.core" />
         <module name="mango-monitor" />
