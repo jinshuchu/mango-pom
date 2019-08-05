@@ -11,7 +11,7 @@
 	<groupId>com.louis</groupId>
 	<artifactId>mango-admin</artifactId>
 	<version>1.0.0</version>
-	<name>mango</name>
+	<name>mango-admin</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -113,7 +113,19 @@
 			<artifactId>spring-boot-admin-starter-client</artifactId>
 			<version>2.1.2</version>
 		</dependency>
-<!--		&lt;!&ndash;consul&ndash;&gt;-->
+		<!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.aliyun.oss</groupId>
+			<artifactId>aliyun-sdk-oss</artifactId>
+			<version>3.5.0</version>
+		</dependency>
+
+		<!--		&lt;!&ndash;consul&ndash;&gt;-->
 <!--		<dependency>-->
 <!--			<groupId>org.springframework.cloud</groupId>-->
 <!--			<artifactId>spring-cloud-starter-consul-discovery</artifactId>-->

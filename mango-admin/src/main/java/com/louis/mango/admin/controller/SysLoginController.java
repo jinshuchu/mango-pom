@@ -9,12 +9,11 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.louis.mango.admin.service.PhotoService;
+import com.louis.mango.admin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.google.code.kaptcha.Constants;
 import com.google.code.kaptcha.Producer;
@@ -28,6 +27,7 @@ import com.louis.mango.admin.util.SecurityUtils;
 import com.louis.mango.admin.vo.LoginBean;
 import com.louis.mango.common.utils.IOUtils;
 import com.louis.mango.core.http.HttpResult;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  /**
@@ -45,6 +45,11 @@ public class SysLoginController {
 	private SysLoginLogService sysLoginLogService;
 	@Autowired
 	private AuthenticationManager authenticationManager;
+
+	@Autowired
+	private UserService userService;
+	@Autowired
+	private PhotoService photoService;
 
 	@GetMapping("captcha.jpg")
 	public void captcha(HttpServletResponse response, HttpServletRequest request) throws ServletException, IOException {
@@ -72,13 +77,13 @@ public class SysLoginController {
 		String password = loginBean.getPassword();
 		String captcha = loginBean.getCaptcha();
 		// 从session中获取之前保存的验证码跟前台传来的验证码进行匹配
-		Object kaptcha = request.getSession().getAttribute(Constants.KAPTCHA_SESSION_KEY);
-		if(kaptcha == null){
-			return HttpResult.error("验证码已失效");
-		}
-		if(!captcha.equals(kaptcha)){
-			return HttpResult.error("验证码不正确");
-		}
+//		Object kaptcha = request.getSession().getAttribute(Constants.KAPTCHA_SESSION_KEY);
+//		if(kaptcha == null){
+//			return HttpResult.error("验证码已失效");
+//		}
+//		if(!captcha.equals(kaptcha)){
+//			return HttpResult.error("验证码不正确");
+//		}
 //		System.out.println(request.getAttribute("user"));
 		// 用户信息
 		SysUser user = sysUserService.findByName(username);
@@ -90,14 +95,79 @@ public class SysLoginController {
 			return HttpResult.error("密码不正确");
 		}
 		// 账号锁定
-		if (user.getStatus() == 0) {
-			return HttpResult.error("账号已被锁定,请联系管理员");
-		}
+//		if (user.getStatus() == 0) {
+//			return HttpResult.error("账号已被锁定,请联系管理员");
+//		}
 		// 系统登录认证
 		JwtAuthenticatioToken token = SecurityUtils.login(request, username, password, authenticationManager);
 		// 记录登录日志
 		sysLoginLogService.writeLoginLog(username, IPUtils.getIpAddr(request));
 		return HttpResult.ok(token);
 	}
+
+//	/**
+//	 * 登录接口
+//	 */
+//	@PostMapping(value = "/login")
+//	public HttpResult login(@RequestBody LoginBean loginBean, HttpServletRequest request) throws IOException {
+//		String username = loginBean.getAccount();
+//		String password = loginBean.getPassword();
+////		String captcha = loginBean.getCaptcha();
+//		// 从session中获取之前保存的验证码跟前台传来的验证码进行匹配
+//		Object kaptcha = request.getSession().getAttribute(Constants.KAPTCHA_SESSION_KEY);
+////		if(kaptcha == null){
+////			return HttpResult.error("验证码已失效");
+////		}
+////		if(!captcha.equals(kaptcha)){
+////			return HttpResult.error("验证码不正确");
+////		}
+//
+////		SysUser user = sysUserService.findByName(username);
+//
+//		User user = userService.findUserByName(username);
+//
+//		// 账号不存在、密码错误
+//		if (user == null) {
+//			return HttpResult.error("账号不存在");
+//		}
+//		if (!Objects.equals(password, user.getPassword())) {
+//			return HttpResult.error("密码不正确");
+//		}
+//
+//		// 系统登录认证
+//
+//		return HttpResult.ok(user);
+//	}
+
+//	/**
+//	 * 注册接口
+//	 */
+//	@PostMapping(value = "/register")
+//	public HttpResult register(@RequestBody LoginBean loginBean, HttpServletRequest request) throws IOException {
+//		String username = loginBean.getAccount();
+//		String password = loginBean.getPassword();
+////		String captcha = loginBean.getCaptcha();
+//		// 从session中获取之前保存的验证码跟前台传来的验证码进行匹配
+////		Object kaptcha = request.getSession().getAttribute(Constants.KAPTCHA_SESSION_KEY);
+////		if(kaptcha == null){
+////			return HttpResult.error("验证码已失效");
+////		}
+////		if(!captcha.equals(kaptcha)){
+////			return HttpResult.error("验证码不正确");
+////		}
+//
+////		SysUser user = sysUserService.findByName(username);
+//
+//		User user = User.builder().userName(username).password(password).createTime(new Date()).updateTime(new Date()).build();
+//		userService.save(user);
+//
+//		return HttpResult.ok("注册成功");
+//	}
+
+//	@PostMapping("/upload")
+//	public HttpResult singleFileUpload(@RequestParam("file") MultipartFile file, Long userId) {
+//
+//		return photoService.save(file, userId);
+//	}
 
 }

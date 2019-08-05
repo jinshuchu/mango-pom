@@ -50,6 +50,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 // 首页和登录页面
                 .antMatchers("/").permitAll()
                 .antMatchers("/login").permitAll()
+                .antMatchers("/register").permitAll()
                 // swagger
                 .antMatchers("/swagger-ui.html").permitAll()
                 .antMatchers("/swagger-resources/**").permitAll()
@@ -58,9 +59,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 // 验证码
                 .antMatchers("/captcha.jpg**").permitAll()
                 // 服务监控
-                .antMatchers("/actuator/**").permitAll()
+                .antMatchers("/actuator/**").permitAll();
                 // 其他所有请求需要身份认证
-                .anyRequest().authenticated();
+//                .anyRequest().authenticated();
         http.headers().frameOptions().disable();
         // 退出登录处理器
         http.logout().logoutSuccessHandler(new HttpStatusReturningLogoutSuccessHandler());

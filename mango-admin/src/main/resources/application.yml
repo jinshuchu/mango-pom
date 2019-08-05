@@ -38,12 +38,26 @@ spring:
       max-open-prepared-statements: 50
       max-pool-prepared-statement-per-connection-size: 20
 
-# 开放健康检查接口
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: ALWAYS
+## 开放健康检查接口
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#  endpoint:
+#    health:
+#      show-details: ALWAYS
+
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 0
+      location: /Users/ksmaster/Desktop/
+      max-file-size: 1MB
+      max-request-size: 10MB
+
+
+# 返回给客户端token的加密密钥
+wx:
+  token:
+    secret: jdmSpq84IrlIxrKf
